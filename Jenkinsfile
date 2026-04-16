@@ -24,7 +24,7 @@ pipeline {
 
      stage('Archive') {
             steps {
-                archiveArtifacts artifacts: 'target/*.war', fingerprint:true
+                archiveArtifacts artifacts: 'target/MyMavenWebApp01.war', fingerprint:true
             }
         }
         stage('Deploy') {
